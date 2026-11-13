@@ -1,0 +1,49 @@
+{
+  "/stats": {
+    "documents": 12,
+    "terms": 213,
+    "queries": 1,
+    "average_latency_ms": 0.04,
+    "popular": [
+      {
+        "query": "bm25",
+        "searches": 1
+      }
+    ]
+  },
+  "/search": {
+    "results": [
+      {
+        "id": 11,
+        "url": "https://example.org/library/11",
+        "title": "Search engine phrase queries",
+        "content": "xact token order. Store positions in an inverted index to distinguish machine learning from learning machine. Autocomplete expands query prefixes.",
+        "score": 3.75282
+      },
+      {
+        "id": 8,
+        "url": "https://example.org/library/8",
+        "title": "Fraud detection in financial transactions",
+        "content": "Fraud detection uses anomaly detection and supervised machine learning. Imbalanced datasets require careful threshold selection, precision recall analysis and explainable predictions.",
+        "score": 2.67248
+      },
+      {
+        "id": 4,
+        "url": "https://example.org/library/4",
+        "title": "Machine learning model evaluation",
+        "content": "Precision and recall measure classification performance. Average precision summarizes the precision recall curve. Use a held out test set and avoid data leakage.",
+        "score": 2.62801
+      }
+    ],
+    "count": 3,
+    "latency_ms": 0.1,
+    "algorithm": "bm25"
+  },
+  "/suggest": [
+    "machine"
+  ],
+  "/crawl": {
+    "indexed": 1,
+    "errors": []
+  }
+}

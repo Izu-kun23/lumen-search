@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://example.org/library/1",
+    "title": "Information retrieval foundations",
+    "content": "Information retrieval finds relevant documents from a collection. An inverted index maps terms to document identifiers and token positions. Ranking models estimate document relevance."
+  },
+  {
+    "url": "https://example.org/library/2",
+    "title": "BM25 ranking explained",
+    "content": "BM25 is a probabilistic ranking function. It combines inverse document frequency with term frequency saturation and document length normalization. BM25 is useful for keyword search."
+  },
+  {
+    "url": "https://example.org/library/3",
+    "title": "Building responsible web crawlers",
+    "content": "A web crawler discovers links and extracts HTML content. Respect robots.txt, rate limits and site policies. Bound the frontier, deduplicate URLs and avoid crawling private networks."
+  },
+  {
+    "url": "https://example.org/library/4",
+    "title": "Machine learning model evaluation",
+    "content": "Precision and recall measure classification performance. Average precision summarizes the precision recall curve. Use a held out test set and avoid data leakage."
+  },
+  {
+    "url": "https://example.org/library/5",
+    "title": "Vector search and retrieval augmented generation",
+    "content": "Vector search compares dense embeddings using cosine similarity. Retrieval augmented generation grounds language model responses in retrieved evidence. Hybrid search combines lexical and vector retrieval."
+  },
+  {
+    "url": "https://example.org/library/6",
+    "title": "Database indexes and query planning",
+    "content": "Database indexes accelerate queries by reducing scans. B trees support ordered lookup. SQL query plans show access patterns and help optimize database performance."
+  },
+  {
+    "url": "https://example.org/library/7",
+    "title": "Multi agent research systems",
+    "content": "Multi agent research uses specialized planning, retrieval, analysis and verification stages. Evidence provenance, citation validation and bounded execution improve reliability."
+  },
+  {
+    "url": "https://example.org/library/8",
+    "title": "Fraud detection in financial transactions",
+    "content": "Fraud detection uses anomaly detection and supervised machine learning. Imbalanced datasets require careful threshold selection, precision recall analysis and explainable predictions."
+  },
+  {
+    "url": "https://example.org/library/9",
+    "title": "Distributed systems and caching",
+    "content": "Distributed systems coordinate services across networks. Caching reduces latency but creates consistency tradeoffs. Redis supports fast key value operations."
+  },
+  {
+    "url": "https://example.org/library/10",
+    "title": "Python API design with FastAPI",
+    "content": "FastAPI provides typed request validation, dependency injection and OpenAPI documentation. Separate application services from HTTP routes to support testing and maintainability."
+  },
+  {
+    "url": "https://example.org/library/11",
+    "title": "Search engine phrase queries",
+    "content": "Phrase queries require exact token order. Store positions in an inverted index to distinguish machine learning from learning machine. Autocomplete expands query prefixes."
+  },
+  {
+    "url": "https://example.org/library/12",
+    "title": "Search ranking evaluation",
+    "content": "Evaluate search using mean reciprocal rank, recall at k and normalized discounted cumulative gain. Use fixed relevance judgments and report latency alongside ranking quality."
+  }
+]

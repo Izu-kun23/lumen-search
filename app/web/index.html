@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="A search engine, from first principles" />
+    <title>Lumen — A search engine, from first principles</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+    <style>
+      :root {
+        --accent: #7952d9;
+        --soft: #f2edff;
+      }
+    </style>
+  </head>
+  <body>
+    <aside>
+      <div class="brand">
+        <span class="mark">L</span>Lumen<span
+          style="font-size: 10px; color: #9aa4b6; letter-spacing: 0"
+        >
+          / LAB</span
+        >
+      </div>
+      <p class="muted">A search engine, from first principles</p>
+      <div class="navlabel">WORKSPACE</div>
+      <a class="navitem active" href="/">◈ &nbsp; Search workspace</a
+      ><a class="navitem" href="/docs">⌘ &nbsp; API explorer</a
+      ><a class="navitem" href="https://github.com/Izu-kun23/lumen-search"
+        >↗ &nbsp; Documentation</a
+      >
+      <div class="asidefoot">
+        <span class="avatar">IT</span
+        ><strong style="font-size: 12px">Izuchukwu Tony</strong>
+        <p class="muted">Portfolio engineering lab</p>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <span>Workspace &nbsp; / &nbsp; <strong>Search workspace</strong></span
+        ><span class="badge">● &nbsp; Local workspace</span>
+      </header>
+      <div class="intro">
+        <div>
+          <div class="eyebrow">A search engine, from first principles</div>
+          <h1>Search workspace</h1>
+          <div class="muted">Find the signal in your knowledge.</div>
+        </div>
+        <span class="badge">Built for clarity. Engineered for depth.</span>
+      </div>
+      <section class="stats" id="stats"></section>
+      <div class="grid">
+        <section>
+          <div class="card">
+            <div class="cardhead">
+              <h2>Search your collection</h2>
+              <span class="pill">POSITIONAL INDEX</span>
+            </div>
+            <form id="search">
+              <div class="row">
+                <input
+                  id="query"
+                  aria-label="Search query"
+                  placeholder='Try machine learning or "inverted index"'
+                  required
+                  maxlength="300"
+                /><button class="primary">Search ↗</button>
+              </div>
+              <div class="row" style="margin-top: 14px">
+                <select
+                  id="algorithm"
+                  aria-label="Ranking algorithm"
+                  style="width: 180px"
+                >
+                  <option value="bm25">BM25 ranking</option>
+                  <option value="tfidf">TF-IDF ranking</option></select
+                ><span class="muted">Use quotes for exact phrases</span>
+              </div>
+            </form>
+            <div id="suggestions" class="suggestions"></div>
+            <div id="status" class="status" role="status"></div>
+          </div>
+          <div class="card">
+            <div class="cardhead">
+              <h2>Results</h2>
+              <span id="timing" class="muted">Ready to explore</span>
+            </div>
+            <div id="results" class="empty">
+              <div class="empty-symbol">⌕</div>
+              Your next discovery starts with a question.<br />Search 12
+              original engineering articles.
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="card">
+            <h2>Grow your index</h2>
+            <p class="muted">
+              Crawl up to 10 pages from an approved public host. Robots rules
+              and page limits apply.
+            </p>
+            <form id="crawl">
+              <label for="url">Starting URL</label
+              ><input
+                id="url"
+                type="url"
+                placeholder="https://your-approved-site.com"
+                required
+              /><button class="secondary" style="margin-top: 13px">
+                Crawl & index ↗
+              </button>
+            </form>
+            <p class="muted">
+              Enable the host with CRAWL_ALLOWED_HOSTS before crawling.
+            </p>
+          </div>
+          <div class="card">
+            <h2>Popular searches</h2>
+            <div id="popular" class="muted">No queries yet.</div>
+          </div>
+          <div class="card">
+            <h2>Under the hood</h2>
+            <div class="step">
+              <span class="stepicon">01</span>
+              <div>
+                <strong>Tokenize & normalize</strong>
+                <p>Case folding and term extraction</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="stepicon">02</span>
+              <div>
+                <strong>Retrieve & rank</strong>
+                <p>Hand-built BM25 and TF-IDF</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="stepicon">03</span>
+              <div>
+                <strong>Measure & improve</strong>
+                <p>Query analytics and relevance evaluation</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        Lumen / Engineering portfolio · Python + FastAPI ·
+        <a href="/docs">Explore the API ↗</a>
+      </footer>
+    </main>
+    <script src="/assets/common.js"></script>
+    <script src="/assets/app.js"></script>
+  </body>
+</html>
