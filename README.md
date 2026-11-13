@@ -25,7 +25,7 @@ cd lumen-search
 python -m venv .venv
 source .venv/bin/activate
 # Windows PowerShell: .venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-runtime.lock
 python -m uvicorn app.main:app --host 127.0.0.1 --port 8003
 ```
 
@@ -123,3 +123,7 @@ The UI includes responsive layouts, accessible form labels, loading/error states
 ## License
 
 MIT · Izuchukwu Tony
+
+## MLOps operations
+
+See [the implemented operating model](docs/mlops.md) for versioned experiments, evaluation gates, notebook CI, runtime fingerprints, monitoring and rollback. Run `python -m app.experiments --output artifacts/release` for a reproducible offline release record. Operational endpoints: `/api/version` and `/api/ops`. Docker uses `requirements-runtime.lock`; analysis and tests use `requirements.lock`.

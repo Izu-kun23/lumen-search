@@ -54,6 +54,7 @@ def stats():
     return {
         "documents": len(service.index.documents),
         "terms": len(service.index.postings),
+        "index_version": service.index_version,
         **service.store.analytics(),
     }
 
@@ -66,3 +67,8 @@ def crawl_url(body: CrawlRequest):
         return result
     except Exception as exc:
         raise HTTPException(400, str(exc)) from exc
+
+
+from app.ops import install_operations
+
+operations_store = install_operations(app)
